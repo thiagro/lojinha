@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Função para carregar produtos da API
     function loadProducts() {
-        fetch('http://localhost:3000/products')
+        fetch('http://lojinha.fly.dev/products')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Erro ao carregar produtos');

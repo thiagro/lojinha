@@ -1,0 +1,121 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+h1 {
+    color: #2c3e50;
+    margin: 0;
+}
+
+.btn-cadastro {
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.btn-cadastro:hover {
+    background-color: #2980b9;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.products-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-title {
+    font-size: 1.2em;
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.product-price {
+    font-weight: bold;
+    color: #27ae60;
+    font-size: 1.3em;
+}
+
+.loading {
+    text-align: center;
+    padding: 20px;
+    grid-column: 1 / -1;
+}
+
+.no-products {
+    text-align: center;
+    padding: 20px;
+    grid-column: 1 / -1;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .products-list {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btn-cadastro {
+        margin-top: 10px;
+    }
+}
